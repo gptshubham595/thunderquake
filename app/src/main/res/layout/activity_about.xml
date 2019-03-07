@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shubham.thunderquake.About">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Thunder Quake"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="20dp"
+        android:padding="24dp"
+        android:id="@+id/txt"
+        android:text="ThunderQuake provides you with all the information that you'll need to know about the earthquakes that are recorded around the globe. If you find this app useful, please do rate it and send us your feedback."
+        android:textAlignment="center" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="feedback"
+        android:layout_below="@id/txt"
+        android:text="Send Feedback"
+        android:textColor="@color/textColor" />
+
+
+    <TextView
+        android:id="@+id/dev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="182dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/button2"
+        android:onClick="shubham"
+        android:text="@string/dev"
+        android:textAlignment="center"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dev"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginBottom="55dp"
+        android:layout_marginTop="-170dp"
+        android:background="@drawable/shubham"
+        android:onClick="shubham1" />
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<resources>
+
+    <!--UI Strings -->
+
+    <string name="app_name">ThunderQuake</string>
+    <string name="near_the">Near To</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="emptyText">No Earthquakes found.</string>
+    <string name="emptyDesc">Please check your internet connectivity and try again.</string>
+    <string name="noInternet">No Connection.</string>
+    <string name="emptyview_desc">There were no earthquakes found at the moment.</string>
+
+    <!--MAP Key-->
+
+    <string name="AIzaSyC2jcJmCmrnNey_lo6Ye2mujV7WeCqHy8E">Map API</string>
+    <!-- Settings Menu Item -->
+    <string name="settings_menu_item">Settings</string>
+    <string name="about_menu_item">About</string>
+    <!-- Settings Activity Title -->
+    <string name="settings_title">Settings</string>
+
+    <!--Settings Themes -->
+
+    <string name="settings_themes_label">Themes</string>
+    <string name="settings_themes_key" translatable="false">themes</string>
+    <string name="settings_themes_default" translatable="false">@string/settings_themes_dark_value</string>
+
+    <!-- Strings For Distance Preference-->
+    <string name="settings_distance_label">Distance Unit</string>
+    <string name="settings_distance_key" translatable="false">distance_units</string>
+    <string name="settings_distance_default" translatable="false">@string/settings_distance_km_value</string>
+
+    <!-- Strings For Minimum Magnitude Preference-->
+    <string name="settings_min_magnitude_label">Minimum Magnitude</string>
+    <string name="settings_min_magnitude_key" translatable="false">min_magnitude</string>
+    <string name="settings_min_magnitude_default" translatable="false">3</string>
+
+    <!-- Strings For Limit Preference-->
+    <string name="settings_limit_label">Events Limit</string>
+    <string name="settings_limit_key" translatable="false">limit</string>
+    <string name="settings_limit_default" translatable="false">30</string>
+
+    <!-- Strings For Sort-By Preference -->
+    <string name="settings_order_by_label">Sort By</string>
+    <string name="settings_order_by_key" translatable="false">order_by</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_most_recent_value</string>
+
+    <!-- Strings For Location Preference -->
+    <string name="settings_location_label">Location</string>
+    <string name="settings_location_key" translatable="false">location</string>
+    <string name="settings_location_default" translatable="false">@string/settings_order_by_location_world_value</string>
+
+    <string name="settings_speccountlocation_label">Specific Location Country</string>
+    <string name="settings_speccountlocation_key" translatable="false">speccountlocation</string>
+    <string name="settings_speccountlocation_default" translatable="false">@string/settings_order_by_locationvalue</string>
+
+    <string name="settings_speclocation_label">Specific Location</string>
+    <string name="settings_speclocation_key" translatable="false">speclocation</string>
+    <string name="settings_speclocation_default" translatable="false">@string/settings_order_by_locationvalue</string>
+
+    <!-- Label for dark theme option -->
+    <string name="settings_themes_dark_label">Dark</string>
+    <string name="settings_themes_dark_value">dark</string>
+
+    <!-- Label for light theme option -->
+    <string name="settings_themes_light_label">Light</string>
+    <string name="settings_themes_light_value">light</string>
+
+    <!-- Label for Kilometers option -->
+    <string name="settings_distance_km_label">Kilometers</string>
+    <string name="settings_distance_km_value">kilometers</string>
+
+    <!-- Label for Miles option -->
+    <string name="settings_distance_mi_label">Miles</string>
+    <string name="settings_distance_mi_value">miles</string>
+
+    <!-- Label for order-by magnitude option -->
+    <string name="settings_order_by_magnitude_label">Magnitude</string>
+    <string name="settings_order_by_magnitude_value" translatable="false">magnitude</string>
+
+    <!-- Label for order-by most recent option-->
+    <string name="settings_order_by_most_recent_label">Most Recent</string>
+    <string name="settings_order_by_most_recent_value" translatable="false">time</string>
+
+    <!-- Label for order-by location option -->
+    <string name="settings_order_by_location_asia_label">Asia</string>
+    <string name="settings_order_by_location_asia_value" translatable="false">asia</string>
+
+    <string name="settings_order_by_location_world_label">All</string>
+    <string name="settings_order_by_location_world_value" translatable="false">all</string>
+
+    <string name="settings_order_by_locationvalue" translatable="false">Default</string>
+
+    <string name="settings_order_by_location_africa_label">Africa</string>
+    <string name="settings_order_by_location_africa_value" translatable="false">africa</string>
+
+    <string name="settings_order_by_location_australia_label">Australia</string>
+    <string name="settings_order_by_location_australia_value" translatable="false">australia</string>
+
+    <string name="settings_order_by_location_europe_label">Europe</string>
+    <string name="settings_order_by_location_europe_value" translatable="false">europe</string>
+
+    <string name="settings_order_by_location_south_america_label">South America</string>
+    <string name="settings_order_by_location_south_america_value" translatable="false">south_america</string>
+
+    <string name="settings_order_by_location_north_america_label">North America</string>
+    <string name="settings_order_by_location_north_america_value" translatable="false">north_america</string>
+
+    <string name="dev"><u>Developed by Shubham Kumar Gupta</u></string>
+    <string name="graphics"><u>Graphics by Mervin Monfort</u></string>
+
+
+</resources>

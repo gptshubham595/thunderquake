@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shubham.thunderquake.DosDonts">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="10dp"
+        android:text="Do 's :"
+        android:id="@+id/dosdonts"
+        android:textColor="#fa5757"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_below="@id/dosdonts"
+    android:layout_margin="10dp"
+    android:id="@+id/dos"
+    android:layout_height="200dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="hi"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</ScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dos"
+        android:layout_marginLeft="10dp"
+        android:text="Dont 's :"
+        android:id="@+id/donts"
+        android:textColor="#fa5757"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/donts"
+        android:layout_margin="10dp"
+        android:layout_height="200dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="hi"
+            android:layout_height="match_parent" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

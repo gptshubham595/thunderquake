@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shubham.thunderquake">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="com.shubham.thunderquake.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.shubham.quakealert.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permissions.READ_GSERVICES" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+      <activity
+            android:name="com.shubham.thunderquake.QuakeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <uses-library android:name="org.apache.http.legacy"
+            android:required="false"/>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.shubham.thunderquake"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.shubham.thunderquake.QuakeDetailsActivity"
+            android:label="Details"
+            android:parentActivityName="com.shubham.thunderquake.QuakeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.shubham.thunderquake.DosDonts"
+            android:label="Do's And Dont's"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shubham.thunderquake.QuakeActivity" />
+        </activity>
+
+        <activity
+            android:name="com.shubham.thunderquake.Contact"
+            android:label="Contacts"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shubham.thunderquake.QuakeActivity" />
+        </activity>
+
+        <activity
+            android:name="com.shubham.thunderquake.SettingsActivity"
+            android:label="@string/settings_menu_item"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shubham.thunderquake.QuakeActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAcTvHCEY7-_Q0dVUWvhJKOW1MSJcgwJeo" />
+        <meta-data
+            android:name="com.google.android.gms.verson"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.shubham.thunderquake.MapsActivity"
+            android:label="Thunderquake Map"
+            android:parentActivityName="com.shubham.thunderquake.QuakeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shubham.thunderquake.About"
+            android:label="About"
+            android:parentActivityName="com.shubham.thunderquake.QuakeActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.shubham.thunderquake.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>
