@@ -1,0 +1,2 @@
+# thunderquake
+Earthqauke alert
