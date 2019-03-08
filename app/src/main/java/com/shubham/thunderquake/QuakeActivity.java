@@ -249,47 +249,56 @@ public class QuakeActivity extends AppCompatActivity implements LoaderManager.Lo
         }
         switch (speclocation) {
             case "None":
-                if(speccountlocation.equals("None")){
-                go(location);}else{
-                    go3(location,speccountlocation);
-                }
                 break;
             case "Assam":
+                speccountlocation="None";
                 myLat = "26.2006";
                 myLon = "92.9376";
                 myRadius = "4";
                 break;
             case "Jammu Kashmir":
+                speccountlocation="None";
+
                 myLat = "34.083656";
                 myLon = "74.797371";
                 myRadius = "6";
                 break;
             case "Delhi":
+                speccountlocation="None";
+
                 myLat = "28.7041";
                 myLon = "77.1025";
                 myRadius = "3";
                 break;
             case "Maharastra":
+
+                speccountlocation="None";
                 myLat = "18.5204";
                 myLon = "7.8567";
                 myRadius = "5";
                 break;
             case "Tamil Nadu":
+                speccountlocation="None";
                 myLat = "11.1271";
                 myLon = "78.6569";
                 myRadius = "5";
                 break;
             case "Kerala":
+                speccountlocation="None";
                 myLat = "10.8505";
                 myLon = "76.2711";
                 myRadius = "4";
                 break;
             case "Kolkata":
+                speccountlocation="None";
+
                 myLat = "22.5726";
                 myLon = "88.3639";
                 myRadius = "4";
                 break;
             case "Bihar":
+                speccountlocation="None";
+
                 myLat = "25.0961";
                 myLon = "85.3131";
                 myRadius = "5";
@@ -298,62 +307,71 @@ public class QuakeActivity extends AppCompatActivity implements LoaderManager.Lo
         }
         switch (speccountlocation) {
             case "None":
-                if(speclocation.equals("None"))
-                {go(location);}
-                else{go2(location,speclocation);}
                 break;
 
             case "Japan":
+                speclocation="None";
                 myLat = "36.2048";
                 myLon = "138.2529";
-                myRadius = "10";
+                myRadius = "5";
                 break;
             case "Nepal":
+                speclocation="None";
                 myLat = "28.3949";
                 myLon = "84.1240";
-                myRadius = "8";
+                myRadius = "5";
                 break;
             case "India":
+                speclocation="None";
                 myLat = "20.5937";
                 myLon = "78.9629";
                 myRadius = "15";
                 break;
             case "Ecuador":
+                speclocation="None";
                 myLat = "1.8312";
                 myLon = "78.1834";
                 myRadius = "10";
                 break;
             case "Philippines":
+                speclocation="None";
                 myLat = "12.8797";
                 myLon = "121.7740";
                 myRadius = "20";
                 break;
             case "Pakistan":
+                speclocation="None";
                 myLat = "30.3753";
                 myLon = "69.3451";
                 myRadius = "15";
                 break;
 		    case "El Salvador":
+                speclocation="None";
                 myLat = "13.7942";
                 myLon = "88.8965";
                 myRadius = "10";
                 break;
             case "Mexico":
+                speclocation="None";
                 myLat = "23.6345";
                 myLon = "102.5528";
                 myRadius = "15";
                 break;
             case "Turkey":
+                speclocation="None";
                 myLat = "38.9637";
                 myLon = "35.2433";
                 myRadius = "10";
                 break;
             case "Indonesia":
+                speclocation="None";
                 myLat = "0.7893";
                 myLon = "113.9213";
-                myRadius = "19";
+                myRadius = "15";
                 break;
         }
+        if(speccountlocation.equals("None") && speccountlocation.equals("None")){ go(location); }
+        else if(!speccountlocation.equals("None") && !speclocation.equals("None")){ go(location);}
         Uri baseUri = Uri.parse(USGS_REQUEST_URL);
         Uri.Builder uriBuilder = baseUri.buildUpon();
 
@@ -427,10 +445,9 @@ private void go(String location){
     }
 
 }
-    private void go2(String location,String speclocation){
+    private void go2(String speclocation){
         switch (speclocation) {
             case "None":
-                go(location);
                 break;
             case "Assam":
                 myLat = "26.2006";
@@ -476,10 +493,9 @@ private void go(String location){
         }
 
     }
-    private void go3(String location,String speccountlocation){
+    private void go3(String speccountlocation){
         switch (speccountlocation) {
             case "None":
-                go(location);
                 break;
 
             case "Japan":

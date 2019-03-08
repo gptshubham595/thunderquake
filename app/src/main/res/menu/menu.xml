@@ -18,6 +18,11 @@
         android:orderInCategory="2"
         android:title="Emergency Contact"
         app:showAsAction="never" />
+     <item
+        android:id="@+id/action_what"
+        android:orderInCategory="2"
+        android:title="What is It?"
+        app:showAsAction="never" />
     <item
         android:id="@+id/action_about"
         android:orderInCategory="3"

@@ -5,7 +5,235 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.shubham.thunderquake.Contact">
-
-    
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="10dp"
+        android:text="Emergency Contact Numbers :"
+        android:textColor="#fa5757"
+		android:id="@+id/doit"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+		<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:text="Click to CALL	(📞)"
+        android:id="@+id/dosdonts"
+		android:textColor="#57fa62"
+		android:layout_below="@id/doit"
+        android:textSize="12sp" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_below="@id/dosdonts"
+    android:layout_margin="10dp"
+    android:id="@+id/dos"
+    android:layout_height="match_parent">
+	<LinearLayout
+        android:layout_width="match_parent"
+		android:orientation="vertical"
+        android:layout_height="match_parent">
+    <Button
+            android:layout_width="match_parent"
+            android:text="
+			All India Railway Helpline number: 1512"
+			android:padding="2dp"
+            android:layout_margin="6dp"
+			android:id="@+id/a"
+			android:gravity="center"
+			android:textStyle="bold"
+            android:layout_height="match_parent" />
+<Button
+            android:layout_width="match_parent"
+            android:text="
+			Police Control Room : 100"
+			android:id="@+id/b"
+			android:textStyle="bold"
+			android:layout_below="@id/a"
+			android:layout_margin="6dp"
+            android:layout_height="match_parent" />
+<Button
+            android:layout_width="match_parent"
+            android:text="
+			Women's Helpline (All Over in India): 181"
+			android:id="@+id/c"
+			android:textStyle="bold"
+			android:layout_below="@id/b"
+			android:layout_margin="6dp"
+            android:layout_height="match_parent" />
+<Button
+            android:layout_width="match_parent"
+            android:text="
+			Medical Helpline: 108"
+			android:id="@+id/d"
+			android:textStyle="bold"
+			android:layout_below="@id/c"
+			android:layout_margin="6dp"
+            android:layout_height="match_parent" />
+<Button
+            android:layout_width="match_parent"
+            android:text="
+			Ambulance helpline: 102"
+			android:layout_below="@id/d"
+			android:id="@+id/e"
+			android:textStyle="bold"
+			android:layout_margin="6dp"
+            android:layout_height="match_parent" />
+<Button
+            android:layout_width="match_parent"
+            android:text="
+			AIDS Helpline : 1097"
+			android:id="@+id/f"
+			android:textStyle="bold"
+			android:layout_below="@id/e"
+			android:layout_margin="6dp"
+            android:layout_height="match_parent" />
+<Button
+            android:layout_width="match_parent"
+            android:text="
+			Fire service : 101"
+			android:id="@+id/g"
+			android:layout_below="@id/f"
+			android:padding="2dp"        android:layout_margin="6dp"
+			android:textStyle="bold"
+            android:layout_height="match_parent" />
+<Button
+            android:layout_width="match_parent"
+			android:layout_below="@id/g"
+            android:text="
+			Centralised Accident Trauma  Services : 1099"
+			android:padding="2dp"        android:layout_margin="6dp"
+			android:id="@+id/h"
+			android:textStyle="bold"
+            android:layout_height="match_parent" />
+<Button
+            android:layout_width="match_parent"
+            android:text="
+			Senior Citizen Helpline  : 1291"
+			android:padding="2dp"        android:layout_margin="6dp"
+			android:layout_below="@id/h"
+			android:id="@+id/i"
+			android:textStyle="bold"
+            android:layout_height="match_parent" />
+<Button
+            android:layout_width="match_parent"
+            android:text="
+			Anti-Obscene Calls Cell  : 1091"
+			android:padding="2dp"        android:layout_margin="6dp"
+			android:layout_below="@id/i"
+			android:id="@+id/j"
+			android:textStyle="bold"
+            android:layout_height="match_parent" />
+<Button
+            android:layout_width="match_parent"
+            android:text="
+			Anti Poison : 1066"
+			android:id="@+id/k"
+			android:textStyle="bold"
+			android:padding="2dp"        android:layout_margin="6dp"
+			android:layout_below="@id/j"
+            android:layout_height="match_parent" />
+<Button
+            android:layout_width="match_parent"
+            android:text="
+			Eye Donation  : 1919"
+			android:layout_below="@id/k"
+			android:id="@+id/l"
+			android:textStyle="bold"
+			android:layout_margin="6dp"
+            android:layout_height="match_parent" />
+<Button
+            android:layout_width="match_parent"
+            android:text="
+			Directory Enquiry  : 197"
+			android:id="@+id/m"
+			android:textStyle="bold"
+			android:padding="2dp"        android:layout_margin="6dp"
+			android:layout_below="@id/l"
+            android:layout_height="match_parent" />
+<Button
+            android:layout_width="match_parent"
+            android:text="
+			CGHS Helpline: 155224"
+			android:padding="2dp"        android:layout_margin="6dp"
+			android:layout_below="@id/m"
+			android:id="@+id/n"
+			android:textStyle="bold"
+            android:layout_height="match_parent" />
+<Button
+            android:layout_width="match_parent"
+            android:text="
+			Disaster Management of Govt. of NCT  : 1077"
+			android:padding="2dp"        android:layout_margin="6dp"
+			android:layout_below="@id/n"
+			android:id="@+id/o"
+			android:textStyle="bold"
+            android:layout_height="match_parent" />
+<Button
+            android:layout_width="match_parent"
+            android:text="
+			Dy.Commissioner of Police (Missing Children and Women)  : 1094"
+			android:padding="2dp"        android:layout_margin="6dp"
+			android:layout_below="@id/o"
+			android:id="@+id/p"
+			android:textStyle="bold"
+            android:layout_height="match_parent" />
+<Button
+            android:layout_width="match_parent"
+            android:text="
+			Traffic Police Helpline  : 1095"
+			android:layout_below="@id/p"
+			android:padding="2dp"        android:layout_margin="6dp"
+			android:id="@+id/q"
+			android:textStyle="bold"
+            android:layout_height="match_parent" />
+<Button
+            android:layout_width="match_parent"
+            android:text="
+			Delhi Police Helpline: 1090"
+			android:padding="2dp"        android:layout_margin="6dp"
+			android:layout_below="@id/q"
+			android:id="@+id/r"
+			android:textStyle="bold"
+            android:layout_height="match_parent" />
+<Button
+            android:layout_width="match_parent"
+            android:text="
+			Helpline of NDMC Control Room  : 1267"
+			android:padding="2dp"        android:layout_margin="6dp"
+			android:layout_below="@id/r"
+			android:id="@+id/s"
+			android:textStyle="bold"
+            android:layout_height="match_parent" />
+<Button
+            android:layout_width="match_parent"
+            android:text="
+			Ambulance Service  : 1066"
+			android:id="@+id/t"
+			android:layout_below="@id/s"
+			android:padding="2dp"        android:layout_margin="6dp"
+			android:textStyle="bold"
+            android:layout_height="match_parent" />
+<Button
+            android:layout_width="match_parent"
+            android:text="
+			Helpline for Women  : 1092"
+			android:id="@+id/u"
+			android:padding="2dp"        android:layout_margin="6dp"
+			android:layout_below="@id/t"
+			android:textStyle="bold"
+            android:layout_height="match_parent" />
+			<Button
+            android:layout_width="match_parent"
+            android:text="
+			Institute of Liver and Biliary Sciences  : 155353"
+			android:padding="2dp"        android:layout_margin="6dp"
+			android:layout_below="@id/u"
+			android:id="@+id/v"
+			android:textStyle="bold"
+            android:layout_height="match_parent" />
+			</LinearLayout>
+</ScrollView>
 </RelativeLayout>
